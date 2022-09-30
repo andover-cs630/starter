@@ -1,12 +1,12 @@
 const siteMetadata = {
-  title: 'Next.js Starter Blog',
-  author: 'Tails Azimuth',
-  headerTitle: 'TailwindBlog',
-  description: 'A blog created with Next.js and Tailwind.css',
+  title: 'CS630 Data Structures and Algorithms Textbook',
+  author: 'Phillips Andover CS630 Class',
+  headerTitle: 'DATALAB',
+  description: 'A beginners textbook to introduce data structures and algorithms',
   language: 'en-us',
   theme: 'system', // system, dark or light
-  siteUrl: 'https://tailwind-nextjs-starter-blog.vercel.app',
-  siteRepo: 'https://github.com/timlrx/tailwind-nextjs-starter-blog',
+  siteUrl: 'https://cs630-textbook.vercel.app',
+  siteRepo: 'https://github.com/andover-cs630/starter',
   siteLogo: '/static/images/logo.png',
   image: '/static/images/avatar.png',
   socialBanner: '/static/images/twitter-card.png',
