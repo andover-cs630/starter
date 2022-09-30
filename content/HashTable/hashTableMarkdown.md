@@ -54,7 +54,7 @@ This turns us to hash tables, a more efficient version of direct-address tables.
 ![Hash Table Chart1](https://i.ibb.co/NWXBscJ/table2.png)
 >**Figure 11.2** *Using a hash function **h** to map keys hash-table slots. Because keys k2 and k5 map to the same slot, they collide. 
 
-However, as you can see from the figure above, this creates a new issue: sometimes two keys hash to the same slot. This is called a collision. In order to deal with this, we use a process called chaining, which involves placing all elements that hash to the same slot in a linked list, and putting a pointer to the head of that list in the slot. You can see this shown in the figure below:
+However, as you can see from the figure above, this creates a new issue: sometimes two keys hash to the same slot. This is called a collision. In order to deal with this, we use a process called chaining, which involves placing all elements that hash to the same slot in a linked list **[NOTE THIS SHOULD LINK TO OTHER PAGE]**, and putting a pointer to the head of that list in the slot. You can see this shown in the figure below:
 
 ![Hash Table Chart2](https://i.ibb.co/nQ2fNGb/table3.png)
 > **Figure 11.3:** *Collision resolution by chaining. Each hash-table slot **T[j]** contains a linked list of all the keys whose hash value is **j**. For example, **h(k1) == h(k4)**, and **h(k5) == h(k7) == h(k2)**. The linked list can be either singly or doubly linked; we show it as doubly linked because deletion is faster that way
