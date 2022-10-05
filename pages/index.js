@@ -1,4 +1,5 @@
 import Link from '@/components/Link'
+import Image from 'next/image'
 import { PageSEO } from '@/components/SEO'
 import Tag from '@/components/Tag'
 import siteMetadata from '@/data/siteMetadata'
@@ -20,13 +21,28 @@ export default function Home({ posts }) {
     <>
       <PageSEO title={siteMetadata.title} description={siteMetadata.description} />
       <div className="divide-y divide-gray-200 dark:divide-gray-700">
-        <div className="space-y-2 pt-6 pb-8 md:space-y-5">
-          <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
-            Latest
-          </h1>
-          <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
-            {siteMetadata.description}
+        <div className="height-banner space-y-2 pt-6 pb-8 text-center align-middle md:space-y-5">
+          <p style={{ color: '#0077B8', fontWeight: '600' }} className="text-2xl">
+            A Comprehensive Guide to
           </p>
+          <h1 className="object-center text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14 ">
+            Data Structures and Algorithms
+          </h1>
+          <p
+            style={{ color: '#6F0E0B', fontStyle: 'oblique' }}
+            className="object-center text-lg leading-7 text-gray-500 dark:text-gray-400"
+          >
+            Produced by Phillips Academy’s CSC630 Class
+          </p>
+          <button className="rounded border border-b-4 border-black bg-red-800 py-2 px-4 font-bold text-white hover:border-red-800 hover:bg-red-900 ">
+            Start Here
+          </button>
+        </div>
+        <div className="height-banner space-y-2 pt-6 pb-8 md:space-y-5">
+          <h1 className="heading-outline text-4xl font-black" style={{ color: '#5CC6FF' }}>
+            Thorough, Well-Researched, In-Depth Lessons
+          </h1>
+          <Image src="/stacks-example.png" alt="example of stacks" width="30px" height="30px" />
         </div>
         <ul className="divide-y divide-gray-200 dark:divide-gray-700">
           {!posts.length && 'No posts found.'}
